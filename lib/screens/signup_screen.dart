@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth_ui/components/components.dart';
 import 'package:flutter_auth_ui/components/under_part.dart';
-import 'package:flutter_auth_ui/constants.dart';
 import 'package:flutter_auth_ui/screens/screens.dart';
 import 'package:flutter_auth_ui/widgets/widgets.dart';
 

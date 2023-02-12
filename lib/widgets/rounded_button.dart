@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_auth_ui/constants.dart';
 
@@ -27,22 +26,18 @@ class RoundedButton extends StatelessWidget {
     return ElevatedButton(
       child: Text(
         text,
-        style: TextStyle(color: textColor,fontSize: 17),
+        style: TextStyle(color: textColor, fontSize: 17),
       ),
       onPressed: press,
       style: ElevatedButton.styleFrom(
-        primary: kPrimaryColor,
-        padding: const EdgeInsets.symmetric(horizontal: 40,vertical: 20),
-        textStyle: TextStyle(
-          letterSpacing: 2,
-          color: textColor,
-          fontSize: 12,
-          fontWeight: FontWeight.bold,
-          fontFamily: 'OpenSans'
-        )
-      ),
+          primary: kPrimaryColor,
+          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
+          textStyle: TextStyle(
+              letterSpacing: 2,
+              color: textColor,
+              fontSize: 12,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'OpenSans')),
     );
   }
-
-
 }

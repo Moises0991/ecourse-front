@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_auth_ui/screens/screens.dart';
-
-// import 'package:flutter/services.dart';
-// import 'package:user_profile_example/screens/profile_page.dart';
+import 'package:flutter_auth_ui/constants.dart';
+import 'package:flutter_auth_ui/screens/home/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +11,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: LoginScreen());
-    // debugShowCheckedModeBanner: false, home: ProfilePage());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Ecourse',
+      theme: ThemeData(
+        scaffoldBackgroundColor: kBackgroundColor,
+        primaryColor: kPrimaryColor,
+        textTheme: Theme.of(context).textTheme.apply(bodyColor: kTextColor),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      home: const HomeScreen(),
+    );
   }
 }

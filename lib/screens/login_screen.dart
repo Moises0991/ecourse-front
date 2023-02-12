@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+
+// flutter auth
 import 'package:flutter_auth_ui/components/components.dart';
 import 'package:flutter_auth_ui/components/under_part.dart';
-import 'package:flutter_auth_ui/constants.dart';
-import 'package:flutter_auth_ui/screens/profile_page.dart';
+
 import 'package:flutter_auth_ui/screens/screens.dart';
 import 'package:flutter_auth_ui/widgets/widgets.dart';
+
+// constants
+import 'package:flutter_auth_ui/constants.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -61,7 +65,14 @@ class LoginScreen extends StatelessWidget {
                               const RoundedPasswordField(),
                               switchListTile(),
                               RoundedButton(
-                                  text: 'INICIAR SESIÓN', press: () {}),
+                                  text: 'INICIAR SESIÓN',
+                                  press: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                const SignUpScreen()));
+                                  }),
                               // Navigator.push(context, ProfilePage()),
                               const SizedBox(
                                 height: 10,

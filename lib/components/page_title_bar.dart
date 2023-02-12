@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_auth_ui/constants.dart';
 
 class PageTitleBar extends StatelessWidget {
-  const PageTitleBar({ Key? key,required this.title }) : super(key: key);
+  const PageTitleBar({Key? key, required this.title}) : super(key: key);
   final String title;
   @override
   Widget build(BuildContext context) {
@@ -19,17 +19,16 @@ class PageTitleBar extends StatelessWidget {
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.only(top:16.0),
+          padding: const EdgeInsets.only(top: 16.0),
           child: Text(
             title,
             textAlign: TextAlign.center,
             style: const TextStyle(
-              fontFamily: 'OpenSans',
-              fontSize: 20,
-              letterSpacing: 1,
-              fontWeight: FontWeight.bold,
-              color: Color(0xfff575861)
-            ),
+                fontFamily: 'OpenSans',
+                fontSize: 20,
+                letterSpacing: 1,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 87, 88, 97)),
           ),
         ),
       ),
